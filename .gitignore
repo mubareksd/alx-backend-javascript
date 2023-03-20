@@ -106,3 +106,7 @@ dist
 # local
 .tool-versions
 *-main.js
+.eslintrc.js
+babel.config.js
+package-lock.json
+package.json
