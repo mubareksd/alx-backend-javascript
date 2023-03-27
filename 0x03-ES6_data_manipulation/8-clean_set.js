@@ -1,14 +1,11 @@
 const cleanSet = (set, startString) => {
-  if (
-    startString.length === 0
-    || typeof set !== 'object'
-    || typeof startString !== 'string'
-  ) return '';
-  const str = [];
+  const arr = [];
+  if (startString && typeof startString === 'string') {
   for (const item of set) {
-    if (item.startsWith(startString)) str.push(item.slice(startString.length));
+    if (item.startsWith(startString)) arr.push(item.slice(startString.length));
   }
-  return str.join('-');
+}
+  return arr.join('-');
 };
 
 export default cleanSet;
