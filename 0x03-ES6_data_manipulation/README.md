@@ -7,3 +7,4 @@
 | 2. Filter                | [2-get_students_by_loc.js](./2-get_students_by_loc.js)   | implemented a function named `getStudentsByLocation` that returns an array of objects who are located in a specific city.          |
 | 3. Reduce                | [3-get_ids_sum.js](./3-get_ids_sum.js)                   | implemented a function named `getStudentIdsSum` that returns the sum of all the student ids.                                       |
 | 4. Combine               | [4-update_grade_by_city.js](./4-update_grade_by_city.js) | implemented a function named `updateStudentGradeByCity` that returns an array of students for a specific city with their new grade |
+| 5. Typed Arrays          | [5-typed_arrays.js](./5-typed_arrays.js)                 | implemented a function named `createInt8TypedArray` that returns a new `ArrayBuffer` with an `Int8` value at a specific position.      |
