@@ -23,3 +23,14 @@ class Teacher implements TeacherInterface {
 }
 
 const createEmployee = (salary: number | string): Teacher | Director => Number(salary) < 500 ? new Teacher() : new Director();
+
+const isDirector = (employee: TeacherInterface | DirectorInterface): string => employee instanceof Director ? (employee as Director).workDirectorTasks() : (employee as Teacher).workTeacherTasks();
+
+const teachClass = (todayClass: string): string => {
+    if (todayClass === 'Math') {
+        return 'Teaching Math';
+    } else if (todayClass === 'History') {
+        return 'Teaching History';
+    }
+    return '';
+}
