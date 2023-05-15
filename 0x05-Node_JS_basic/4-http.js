@@ -9,5 +9,4 @@ app.listen(1245, '0.0.0.0', () => {
   console.log('Listening on port 1245');
 });
 
-
 module.exports = app;
