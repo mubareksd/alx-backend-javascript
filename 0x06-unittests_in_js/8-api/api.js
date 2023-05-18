@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.status(200).send('Welcome to the payment system');
+  res.send('Welcome to the payment system');
 });
 
 app.listen(7865, '0.0.0.0', () => { 
