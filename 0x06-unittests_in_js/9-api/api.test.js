@@ -63,5 +63,21 @@ describe('api', () => {
         done();
       });
     });
+
+    it('test correct response body', (done) => {
+      request(options, (err, res, body) => {
+        expect(body).to.equal('Payment methods for cart 12');
+        done();
+      });
+    });
+
+    it('test correct content type', (done) => {
+      request(options, (err, res, body) => {
+        expect(res.headers['content-type']).to.equal(
+          'text/html; charset=utf-8'
+        );
+        done();
+      });
+    });
   });
 });
