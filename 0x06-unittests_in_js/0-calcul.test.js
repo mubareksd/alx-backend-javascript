@@ -14,4 +14,10 @@ describe('calculateNumber', function () {
   it('test #4', function () {
     assert.equal(calculateNumber(1.5, 3.7), 6);
   });
+  it('test #5', function () {
+    assert.equal(calculateNumber(3.5, 3.2), 7);
+  });
+  it('test #6', function () {
+    assert.equal(calculateNumber(3.5, 3.2), 7);
+  });
 });
